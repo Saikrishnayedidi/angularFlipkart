@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="row">
+<div class="d-flex  flex-wrap cart">
+    <div class="card col-md-3 m-1 "  *ngFor="let item of products" >
+        <img class="img" src="{{item.image}}"  alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{item.title}}</h5>
+          <p class="card-text">{{item.description}}</p>
+          <p>
+              {{item.price}}
+          </p>
+          <button class="btn btn-primary" (click)="addtoCart(item)"href="#" class="btn btn-primary">add to cart</button>
+        </div>
+      </div>
+</div>
+</div>
+</div>
+

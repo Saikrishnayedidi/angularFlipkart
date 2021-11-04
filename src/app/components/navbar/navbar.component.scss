@@ -1,0 +1,38 @@
+.dropdown:hover>.dropdown-menu{
+    display: block;
+}
+
+.searchsection{
+    position: relative;
+
+}
+.search{
+    width:600px;
+    border-radius: 0px;
+    position: absolute;
+    left: -357px;
+    top: -12px;
+
+}
+.fa-search{
+    position: absolute;
+    
+    bottom: 25%;
+    right: -189px;
+    top: 1px;
+}
+.login-drop{
+    border-radius: 0px;
+    font-size: large;
+}
+.navbar-brand{
+    position: relative;
+    left: 1%;
+}
+.badge{
+  padding: 2px;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top:0.7rem
+}

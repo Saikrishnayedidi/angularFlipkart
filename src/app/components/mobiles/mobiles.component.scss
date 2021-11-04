@@ -1,0 +1,22 @@
+
+.card{
+    width: 20%;
+  
+    
+}
+.card-title,.card-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100ch;
+}
+
+ .img{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 15px;
+
+}
+.cart{
+    margin-left: 99px;
+}

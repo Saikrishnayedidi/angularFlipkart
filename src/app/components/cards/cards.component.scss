@@ -1,0 +1,8 @@
+.card{
+ box-shadow: 0.5 0.5 0.5 0.5 black;
+ &:hover{
+position: relative;
+top: 1px;
+
+} 
+}

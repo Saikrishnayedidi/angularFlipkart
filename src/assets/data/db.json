@@ -1,0 +1,80 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "welcome to the new blog",
+      "body": "Lorem, ipsum dolaecati est debitis ea.or sit amet consectetur adipisicing elit. Accusamus sunt eaque inventore et? Voluptate vitae voluptates eligendi sit, reiciendis dicta debitis placeat. Voluptatem voluptas ratione nulla obc",
+      "likes": 30
+    },
+    {
+      "id": 2,
+      "title": "welcome to the sai blog",
+      "body": "Lorem, ipsum dolaecati est debitis ea.or sit amet consectetur adipisicing elit. Accusamus sunt eaque inventore et? Voluptate vitae voluptates eligendi sit, reiciendis dicta debitis placeat. Voluptatem voluptas ratione nulla obc",
+      "likes": 40
+    },
+    {
+      "id": 1,
+      "title": "welcome to the krishna blog",
+      "body": "Lorem, ipsum dolaecati est debitis ea.or sit amet consectetur adipisicing elit. Accusamus sunt eaque inventore et? Voluptate vitae voluptates eligendi sit, reiciendis dicta debitis placeat. Voluptatem voluptas ratione nulla obc",
+      "likes": 56
+    }
+  ],
+  "login": [
+    {
+      "id": 1,
+      "email": "sai@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": 2,
+      "email": "saikrishna@gmail.com",
+      "password": "12345"
+    }
+  ],
+  "signup": [
+    {
+      "fullname": "sai krishna",
+      "email": "sai@gmail.com",
+      "password": "12345",
+      "id": 1
+    },
+    {
+      "fullname": "ramu",
+      "email": "ramu@gmail.com",
+      "password": "123456",
+      "id": 2
+    },
+    {
+      "fullname": "lokesh",
+      "email": "lokesh@gmail.com",
+      "password": "098098",
+      "id": 3
+    },
+    {
+      "fullname": "fffff",
+      "email": "ramu@gmail.com",
+      "password": "12345",
+      "id": 4
+    }
+  ],
+  "img": [
+    {
+      "imgpath": "../../../assets/images/card1.jpg"
+    },
+    {
+      "imgpath": "../../../assets/images/card2.jpg"
+    },
+    {
+      "imgpath": "../../../assets/images/card3.jpg"
+    },
+    {
+      "imgpath": "../../../assets/images/card4.jpg"
+    },
+    {
+      "imgpath": "../../../assets/images/card5.jpg"
+    },
+    {
+      "imgpath": "../../../assets/images/card2.jpg"
+    }
+  ]
+}

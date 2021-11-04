@@ -1,0 +1,86 @@
+
+    <!-- <div class="table ">
+        <div class="cart-product">
+            <div class="table ">
+                <thead>
+                    <tr>
+                        <th>sr.no</th>
+                        <th>product name</th>
+                        <th>product img</th>
+                        <th>description</th>
+                        <th>price</th>
+                        <th>quantity</th>
+                        <th>total</th>
+                        <th>action</th>
+                       
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>iphone</td>
+                        <td>imf</td>
+                        <td>this a</td>
+                        <td>40000</td>
+                        <td>1</td>
+                        <td>500000</td>
+                        <td><button class="btn"> delete</button></td>
+                    </tr>
+                </tbody>
+            </div>
+        </div>
+    </div>
+ -->
+<ng-container *ngIf="dispalyAddCart.length!==0">
+    <div *ngFor="let item of dispalyAddCart; let i=index">
+        <div class="container">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th>sr.no</th>
+                    <th>product name</th>
+                    <th>product img</th>
+                    <th>description</th>
+                    <th>price</th>
+                    <th>quantity</th>
+                    <th>total</th>
+                    <th>action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>{{item.id}}</th>
+                    <td>{{item.title}}</td>
+                    <td><img class="img" src="{{item.image}}" alt="" srcset=""></td>
+                    <td>{{item.description}}</td>
+                    <td>{{item.price}}</td>
+                    <td>{{item.quantity}}</td>
+                    <td>{{item.totalo}}</td>
+                    <td><button class="btn bg-danger text-light" (click)="delete(item)" > <i class="fas fa-trash"></i></button></td>
+                  </tr>
+                 
+                </tbody>
+              </table>
+        </div>
+   
+      </div>
+</ng-container>
+ 
+  
+
+
+
+<ng-container *ngIf="dispalyAddCart.length==0" ><div class="container">
+    <div class="card">
+        <div class="card-title">
+            my cart
+        </div>
+        <div class="center">
+            <img src="../../../assets/images/d438a32e-765a-4d8b-b4a6-520b560971e8.png" alt="" srcset="">
+            <h4>your cart is empty</h4>
+            <h6>add item to it now</h6>
+            <button class="btn btn-primary" routerLink="/mobile">shop now</button>
+        </div>
+    </div>
+</div></ng-container>
+ 

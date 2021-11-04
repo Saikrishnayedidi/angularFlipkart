@@ -1,0 +1,115 @@
+<nav class="navbar  navbar-dark bg-primary ">
+    <div class="container ">
+      <a class="navbar-brand fs-4 ms-5" href="#">Flipkart</a>
+      <form action="" class="d-flex searchsection ">
+        <input class="form-control  search" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn text-primary "  type="submit"><i class="fas fa-search"></i></button>
+      </form>
+  <div class="d-flex">
+    <div class="dropdown">
+        <button class="btn bg-light text-primary dropdown-toggle px-4 login-drop "  type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          login
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li class="dropdown-item"><span class="me-1">new customer:</span> <a data-bs-toggle="modal" data-bs-target="#exampleModa2"  href="#">sign up</a></li>
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+      <div class="dropdown">
+        <button class="btn text-light dropdown-toggle ms-5 fs-5" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          more
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+      <button class="btn text-light ms-5" routerLink="cart"><i class="fas fa-shopping-cart"><span class="badge bg-danger">{{badge}}</span></i> cart</button>
+  </div>
+      
+         
+         
+        
+      
+     
+    </div>
+    <!-- Button trigger modal -->
+
+  
+  <!-- Modal -->
+  
+  </nav>
+  
+  <div class="modal fade col-12" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <button type="button" class="btn-close" id="close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!-- <div class="modal-header">
+         
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div> -->
+        <div class="modal-body d-flex text-light m-0 model ">
+         <div class="bg-primary p-2 m-2 col-4"> 
+             <h2>login</h2>
+             <p>get access to your orders,wishlist and Recommendations</p>
+            
+        </div>
+        <form [formGroup]="loginForm" (ngSubmit)="login()">
+             <div class=" p-2 col-8">
+            <input formControlName="email" type="email" class="form-control my-3" placeholder="Enter Email" aria-label="Username">
+            <input formControlName="password" type="password" class="form-control my-3" placeholder="password" aria-label="Username">
+           
+          <p class="text-dark"> by continuing, you agree to Flipkart's <a href="">Terms of Use</a> and <a href="">privacy Policy</a></p>
+          <button class="btn btn-danger px-5 py-2 login_btn col-12"> login</button>
+         <p> <a class='link'  data-bs-toggle="modal" data-bs-target="#exampleModa2" >New to Flipkart? Create an account</a></p>
+         </div>
+        
+        </form>
+        
+        </div>
+       
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade col-12" id="exampleModa2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <button type="button" class="btn-close" id="close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!-- <div class="modal-header">
+         
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div> -->
+        <div class="modal-body d-flex text-light m-0 model ">
+         <div class="bg-primary p-2 m-2 col-4"> 
+             
+             <h3>Looks like you're new here</h3>
+             <p> 
+                sing up and get started
+             </p> 
+            
+            
+        </div>
+         <div class=" p-2 col-8">
+             <form [formGroup]="singupForm" (ngSubmit)="signUp()">
+                <input formControlName="fullname" type="text" class="form-control my-3" placeholder="firstname" aria-label="Username">
+                <input  formControlName="email" type="email" class="form-control my-3" placeholder="Enter Email" aria-label="Username">
+                <input  formControlName="password" type="password" class="form-control my-3" placeholder="password" aria-label="Username">
+               
+      
+              <button class="btn btn-danger px-5 py-2 login_btn col-12 my-2" type="submit"> CONTINUE</button>
+              <button class="btn  px-5 py-2 login_btn col-12" data-bs-toggle="modal" data-bs-target="#exampleModal"> Existing user? login </button>
+             </form>
+            
+         </div>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+  <app-filterheader></app-filterheader>
+  <router-outlet></router-outlet>
